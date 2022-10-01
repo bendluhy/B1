@@ -9,24 +9,25 @@ import java.awt.event.KeyEvent;
 public class MainMenu extends SceneBase {
     private double x =0;
     private double y = 0;
+    private double movespeed = 0.25;
     @Override
     public void update(KeyboardListener key)
     {
         if(key.isPressed(KeyEvent.VK_D))
         {
-            x += 1;
+            x += movespeed;
         }
         if(key.isPressed(KeyEvent.VK_A))
         {
-            x -= 1;
+            x -= movespeed;
         }
         if(key.isPressed(KeyEvent.VK_S))
         {
-            y += 1;
+            y += movespeed;
         }
         if(key.isPressed(KeyEvent.VK_W))
         {
-            y -= 1;
+            y -= movespeed;
         }
 
     }

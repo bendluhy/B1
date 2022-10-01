@@ -13,7 +13,7 @@ public class Looper implements Runnable {
     public SceneManager scenemng;
     public KeyboardListener key;
     public boolean running;
-    private final double updateRate = 1.0d/248.0d;
+    private final double updateRate = 1.0d/500.0d;
     long nextStatTime;
     private int fps,ups;
 

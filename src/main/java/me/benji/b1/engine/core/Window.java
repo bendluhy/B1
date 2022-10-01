@@ -22,7 +22,7 @@ public class Window extends JFrame {
         canvas.setFocusable(false);
         add(canvas);
         pack();
-        canvas.createBufferStrategy(4);
+        canvas.createBufferStrategy(3);
         addMouseListener(new Mouse());
         setLocationRelativeTo(null);
         setExtendedState(getExtendedState() | JFrame.MAXIMIZED_BOTH);
